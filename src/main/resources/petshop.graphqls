@@ -1,22 +1,7 @@
 type Query {
-    pets: [Pet]
-    login: Login
+    login(nric: String!, password: String!): Boolean!
 }
 
-type Pet {
-    id: Int
-    type: Animal
-    name: String
-    age: Int
-}
-
-type Login {
-    echo: String
-}
-
-enum Animal {
-    DOG
-    CAT
-    BADGER
-    MAMMOTH
+type Mutation {
+    register(nric: String!, password: String!): Boolean!
 }

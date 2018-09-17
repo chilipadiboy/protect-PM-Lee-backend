@@ -19,7 +19,7 @@ curl -k 'https://localhost:8080/graphql' \
 curl -k 'https://localhost:8080/graphql' \
 -H "Content-Type: application/json" \
 -d '{
-    "query": "mutation($nric:String!,$password:String!){login(nric:$nric,password:$password)}",
+    "query": "mutation($nric:String!,$password:String!){register(nric:$nric,password:$password)}",
     "variables": {"nric":"", "password":""}
 }'
 ```
